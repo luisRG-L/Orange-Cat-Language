@@ -14,5 +14,3 @@ __pycache__/
 # Ignore project dependecies
 node_modules/
 venv/
-
-# Ignore local configuration files
