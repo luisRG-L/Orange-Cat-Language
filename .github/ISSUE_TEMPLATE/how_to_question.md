@@ -2,7 +2,7 @@
 name: 'How to' question
 about: Ask your question of Orange Cat
 title: ''
-labels: question
+labels: bug
 assignees: ''
 
 ---
