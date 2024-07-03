@@ -1,0 +1,18 @@
+# Ignore compiling files and temporal folders
+build/
+dist/
+__pycache__/
+*.log
+*.tmp
+*.swp
+*.pyc
+
+# Ignore specific files of the workspace
+.vscode/
+.idea/
+
+# Ignore project dependecies
+node_modules/
+venv/
+
+# Ignore local configuration files
