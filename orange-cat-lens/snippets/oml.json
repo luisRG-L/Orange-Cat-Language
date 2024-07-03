@@ -1,0 +1,12 @@
+{
+    "oml": {
+        "prefix": "OML doctype",
+        "body": [
+            "<oml name=$1 version=$2>",
+            "\t",
+            "<oml/>",
+            "- $1 -"
+        ],
+        "description": "OML doctype for initialize oml project"
+    }
+}

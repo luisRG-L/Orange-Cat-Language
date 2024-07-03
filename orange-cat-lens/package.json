@@ -1,0 +1,124 @@
+{
+  "name": "orange-cat-lens",
+  "displayName": "Orange-cat-lens",
+  "description": "The official Orange Cat programming language extension",
+  "version": "0.0.3",
+  "icon": "images/logo.png",
+  "publisher": "LuisRG-L",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luisRG-L/Orange-Cat-Lens-Extension"
+  },
+  "bugs": {
+    "url": "https://github.com/luisRG-L/Orange-Cat-Lens-Extension/issues"
+  },
+  "homepage": "https://github.com/luisRG-L/Orange-Cat-Lens-Extension#readme",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "author": {
+    "name": "LuisRG-L"
+  },
+  "license": "MIT",
+  "contributes": {
+    "languages": [
+      {
+        "id": "orangecat",
+        "aliases": [
+          "Orange Cat",
+          "orangecat"
+        ],
+        "extensions": [
+          ".ocat",
+          ".oc",
+          ".otest"
+        ],
+        "configuration": "./grammars/ocat-configuration.json"
+      },
+      {
+        "id": "oml",
+        "aliases": [
+          "Orange Markup Language",
+          "oml"
+        ],
+        "extensions": [
+          ".oml",
+          ".oxml"
+        ],
+        "configuration": "./grammars/oml-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "orangecat",
+        "scopeName": "source.ocat",
+        "path": "./syntaxes/orangecat.tmLanguage.json"
+      },
+      {
+        "language": "oml",
+        "scopeName": "source.oml",
+        "path": "./syntaxes/oml.tmLanguage.json"
+      }
+    ],
+    "themes": [
+      {
+        "label": "Orange Cat Theme",
+        "id": "orange-cat-theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/orangecat-theme.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "orangecat",
+        "path": "./snippets/orangecat.json"
+      },
+      {
+        "language": "oml",
+        "path": "./snippets/oml.json"
+      }
+    ],
+    "iconThemes": [
+      {
+        "id": "orange-cat-icon-theme",
+        "label": "Orange Cat Icons",
+        "path": "./themes/icon-theme.json"
+      }
+    ],
+    "configurationDefaults": {
+      "[oml]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.quickSuggestions": {
+          "other": "on",
+          "comments": "off",
+          "strings": "off"
+        }
+      },
+      "[orangecat]": {
+        "editor.tabsize": 3,
+        "editor.insertSpaces": true,
+        "editor.quickSuggestions": {
+          "other": "on",
+          "comments": "off",
+          "strings": "off"
+        }
+      }
+    },
+    "jsonValidation": [
+      {
+        "fileMatch": "extension.json",
+        "url": "./schemas/extension-schema.json"
+      }
+    ]
+  },
+  "keywords": [
+    "theme",
+    "color",
+    "custom",
+    "orangecat"
+  ]
+}

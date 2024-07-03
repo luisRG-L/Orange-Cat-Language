@@ -1,0 +1,35 @@
+{
+    "print": {
+        "prefix": "print",
+        "body": [
+            "print ( $1 ) ;"
+        ],
+        "description": "Print a message"
+    },
+    "get": {
+        "prefix": "get",
+        "body": [
+            "get ( $1 ) ;"
+        ]
+    },
+    "function": {
+        "prefix": "func",
+        "body": [
+            "func $1 ( $2 ) {",
+            "   //Your_Code",
+            "   $3",
+            "} ;"
+        ]
+    },
+    "functionc": {
+        "prefix": "funcc",
+        "body": [
+            "func $1 ( $2 ) {",
+            "   //Your_Code",
+            "   $3",
+            "} ;",
+            "",
+            "$1 ( ) ;"
+        ]
+    }
+}

@@ -1,0 +1,99 @@
+{
+    "$schema": "vscode://schemas/color-theme",
+    "name": "Arduino C Theme",
+    "colors": {
+        "editor.foreground": "#FFFFFF",
+        "editor.background": "#222222",
+        "editor.selectionBackground": "#264F78",
+        "editor.lineHighlightBackground": "#2A2A2A",
+        "editorCursor.foreground": "#e08600",
+        "editorWhitespace.foreground": "#3B3A32"
+    },
+    "tokenColors": [
+        {
+            "scope": "keyword.control",
+            "settings": {
+                "foreground": "#9c3fff"
+            }
+        },
+        {
+            "scope": "string.quoted.single, string.quoted.double",
+            "settings": {
+                "foreground": "#c40000"
+            }
+        },
+        {
+            "scope": "comment.block.documentation",
+            "settings": {
+                "foreground": "#00ff00"
+            }
+        },
+        {
+            "scope": "comment.line.double-slash, comment.block",
+            "settings": {
+                "foreground": "#008000"
+            }
+        },
+        {
+            "scope": "keyword.operator",
+            "settings": {
+                "foreground": "#D4D4D4"
+            }
+        },
+        {
+            "scope": "invalid.illegal",
+            "settings": {
+                "foreground": "#ff0000",
+                "fontStyle": "underline"
+            }
+        },
+        {
+            "scope": "constant.numeric",
+            "settings": {
+                "foreground": "#afff99"
+            }
+        },
+        {
+            "scope": "constant.character",
+            "settings": {
+                "foreground": "#c40000"
+            }
+        },
+        {
+            "scope": "constant.language",
+            "settings": {
+                "foreground": "#009cfc"
+            }
+        },
+        {
+            "scope": "meta.function",
+            "settings": {
+                "foreground": "#6ac69e"
+            }
+        },
+        {
+            "scope": "entity.name.function",
+            "settings": {
+                "foreground": "#eef997"
+            }
+        },
+        {
+            "scope": "storage.type",
+            "settings": {
+                "foreground": "#3a5bff"
+            }
+        },
+        {
+            "scope": "entity.name.type",
+            "settings": {
+                "foreground": "#008d70"
+            }
+        },
+        {
+            "scope": "variable.name",
+            "settings": {
+                "foreground": "#04f2ff"
+            }
+        }
+    ]
+}

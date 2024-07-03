@@ -1,0 +1,49 @@
+{
+  "iconDefinitions": {
+    "orangeCatFile": {
+      "iconPath": "./images/ocat-icon.png"
+    },
+    "orangeCatStrict": {
+      "iconPath": "./images/oc-icon.png"
+    },
+    "orangeCatTest": {
+      "iconPath": "./images/ocat-test.png"
+    },
+    "orangeCatLibFile": {
+      "iconPath": "./images/olib-icon.png"
+    },
+    "normal-folder": {
+      "iconPath": "./images/folder-normal.png"
+    },
+    "normal-folder-e": {
+      "iconPath": "./images/folder-normal-open.png"
+    },
+    "ocat-folder": {
+      "iconPath": "./images/folder-ocat.png"
+    },
+    "ocat-folder-e": {
+      "iconPath": "./images/folder-ocat-open.png"
+    }
+  },
+  "fileExtensions": {
+    "ocat": "orangeCatFile",
+    "oc": "orangeCatStrict",
+    "otest": "orangeCatTest",
+    "olib": "orangeCatLibFile"
+  },
+  "languageIds": {
+    "orangecat": "orangeCatFile"
+  },
+  "folder": "normal-folder",
+  "folderExpanded": "normal-folder-e",
+  "folderNames": {
+    "ocat": "ocat-folder",
+    ".ocat": "ocat-folder",
+    "orangecat": "ocat-folder"
+  },
+  "folderNamesExpanded": {
+    "ocat": "ocat-folder-e",
+    ".ocat": "ocat-folder-e",
+    "orangecat": "ocat-folder-e"
+  }
+}

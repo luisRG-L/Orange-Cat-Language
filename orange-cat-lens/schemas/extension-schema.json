@@ -1,0 +1,106 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "title": "Orange Cat IDE Extension",
+    "properties": {
+        "name": {
+            "type": "string",
+            "minLength": 5,
+            "maxLength": 30
+        },
+        "author": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "minLength": 2,
+                    "maxLength": 20
+                },
+                "github": {
+                    "type": "string",
+                    "format": "uri"
+                } 
+            },
+            "required": ["name"]
+        }, 
+        "contributors": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "minLength": 2,
+                        "maxLength": 20
+                    },
+                    "github": {
+                        "type": "string",
+                        "format": "uri"
+                    } 
+                },
+                "required": ["name"]
+            }
+        },
+        "version": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 5
+        },
+        "version-type": {
+            "type": "string",
+            "enum": ["version", "snapshot", "alpha", "beta"]
+        },
+        "display": {
+            "type": "object",
+            "properties": {
+                "title": {
+                    "type": "string",
+                    "maxLength": 30
+                },
+                "description": {
+                    "type": "string",
+                    "maxLength": 100
+                },
+                "icon": {
+                    "type": "string",
+                    "format": "uri"
+                }
+            }
+        },
+        "Configurations": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "maxLength": 10
+                    },
+                    "settings": {
+                        "type": "object",
+                        "properties": {
+                            "includes": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "settings": {
+            "type": "object",
+            "properties": {
+                "editor.font": {
+                    "type": "string"
+                },
+                "editor.size": {
+                    "type": "integer"
+                }
+            }
+        }
+    },
+    "required": ["name", "display", "version"]
+}
