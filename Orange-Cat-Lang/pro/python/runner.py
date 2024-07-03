@@ -1,6 +1,3 @@
-from OrangeCat import *
+import parse as parser
 
-fileName = input("File route: ")
-print ("\n")
-code = getFileArray(PROJECTS + fileName + ".ocat")
-start_proccess(code)
+parser.parse_code()
