@@ -16,11 +16,23 @@
   "engines": {
     "vscode": "^1.90.0"
   },
+  "main": "./out/extension.js",
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
   "categories": [
     "Programming Languages"
   ],
   "author": {
     "name": "LuisRG-L"
+  },
+  "devDependencies": {
+    "typescript": "^4.4.3",
+    "@types/node": "^16.11.0",
+    "@types/vscode": "^1.60.0",
+    "vscode": "^1.4.0"
   },
   "license": "MIT",
   "contributes": {

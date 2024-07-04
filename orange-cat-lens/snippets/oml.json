@@ -8,5 +8,37 @@
             "- $1 -"
         ],
         "description": "OML doctype for initialize oml project"
+    },
+    "dep": {
+        "prefix": "Dependecy region",
+        "body": [
+            "<dependecies include-version=1.0.0>",
+            "\t",
+            "<dependecies/>"
+        ]
+    },
+    "lib": {
+        "prefix": "Librarie region",
+        "body": [
+            "<libraries include-version=1.0.0>",
+            "\t",
+            "<libraries/>"
+        ]
+    },
+    "cblock": {
+        "prefix": "Custom block",
+        "body": [
+            "<custom-block name=\"$1\">",
+            "\t",
+            "<custom-block/>"
+        ]
+    },
+    "cdblock": {
+        "prefix": "Deprecated custom block",
+        "body": [
+            "<custom-block name=\"$1\" deprecated-version=\"$2\">",
+            "\t",
+            "<custom-block/>"
+        ]
     }
 }
