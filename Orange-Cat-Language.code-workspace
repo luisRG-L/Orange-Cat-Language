@@ -6,6 +6,6 @@
 	],
 	"settings": {
 		"git.enabled": false,
-		"files.eol": "\n"
+		"files.eol": "\r\n"
 	}
 }
