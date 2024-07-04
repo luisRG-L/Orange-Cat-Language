@@ -6,7 +6,7 @@
 
 //#ifdef _WIN32
 #   define NATURAL_ROUTE getenv("USERPROFILE")
-#   define ABSOLUTE_PATH "\\Orange Cat\\Orange-Cat-Language\\Orange-Cat-Lang\\pro\\python\\"
+#   define ABSOLUTE_PATH "\\Orange-Cat-Language\\Orange-Cat-Lang\\pro\\python\\"
 /*#else
 #   define ABSOLUTE_PATH "./python"
 #   define NATURAL_ROUTE "./"
