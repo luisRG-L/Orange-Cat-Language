@@ -1,4 +1,4 @@
-from OrangeCat import *
+from . OrangeCat import *
 
 fileName = input("Project name: ")
 print ("\n")

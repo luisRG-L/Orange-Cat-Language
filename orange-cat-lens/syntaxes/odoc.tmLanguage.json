@@ -1,0 +1,127 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "fileTypes": ["odoc", "od"],
+    "patterns": [
+      {
+        "include": "#headers"
+      },
+      {
+        "include": "#emphasis"
+      },
+      {
+        "include": "#code"
+      },
+      {
+        "include": "#links"
+      },
+      {
+        "include": "#lists"
+      },
+      {
+        "include": "#blockquotes"
+      },
+      {
+        "include": "#horizontal_rules"
+      },
+      {
+        "include": "#tables"
+      },
+      {
+        "include": "#images"
+      },
+      {
+        "include": "#footnotes"
+      },
+      {
+        "include": "#html"
+      },
+      {
+        "include": "#comments"
+      }
+    ],
+    "repository": {
+        "headers": {
+            "patterns": [
+                {
+                    "match": "^#{1,6}(?!#)",
+                    "name": "markup.heading"
+                }
+            ]
+        },
+        "emphasis": {
+            "patterns": [
+                {
+                    "match": "\\*\\*(.*?)\\*\\*|\\*(.*?)\\*",
+                    "captures": {
+                        "1": { "name": "markup.bold" },
+                        "2": { "name": "markup.italic" }
+                    }
+                }
+            ]
+        },
+        "code": {
+            "begin": "`",
+            "end": "`",
+            "name": "markup.raw.inline"
+        },
+        "links": {
+            "patterns": [
+                {
+                    "match": "\\[(.*?)\\]\\((.*?)\\)",
+                    "captures": {
+                        "1": { "name": "string.other.link.title.markdown" },
+                        "2": { "name": "markup.underline.link.markdown" }
+                    }
+                }
+            ]
+        },
+        "lists": {
+            "patterns": [
+                {
+                    "match": "^\\s*([-+*]|\\d+\\.)\\s+",
+                    "name": "markup.list.unnumbered.markdown"
+                }
+            ]
+        },
+        "blockquotes": {
+            "match": "^\\s*>",
+            "name": "markup.quote.markdown"
+        },
+        "horizontal_rules": {
+            "match": "^\\s*[-*]{3,}\\s*$",
+            "name": "meta.separator.markdown"
+        },
+        "tables": {
+            "match": "^\\s*\\|",
+            "name": "markup.table.markdown"
+        },
+        "images": {
+            "patterns": [
+                {
+                    "match": "\\!\\[(.*?)\\]\\((.*?)\\)",
+                    "captures": {
+                        "1": { "name": "string.other.link.title.markdown" },
+                        "2": { "name": "markup.underline.link.image.markdown" }
+                    }
+                }
+            ]
+        },
+        "footnotes": {
+            "begin": "\\[\\^",
+            "end": "\\]",
+            "name": "markup.underline.link.footnote.markdown"
+        },
+        "html": {
+            "begin": "^\\s*<(?![!/?\\w\\s])",
+            "end": ">$",
+            "name": "text.html.markdown"
+        },
+        "comments": {
+            "begin": "<!--",
+            "end": "-->",
+            "name": "comment.block.html.markdown"
+        }
+    },
+    "scopeName": "source.odoc"
+}
+  

@@ -2,12 +2,12 @@
   "name": "orange-cat-lens",
   "displayName": "Orange-cat-lens",
   "description": "The official Orange Cat programming language extension",
-  "version": "0.0.3",
+  "version": "0.0.6",
   "icon": "images/logo.png",
   "publisher": "LuisRG-L",
   "repository": {
     "type": "git",
-    "url": "https://github.com/luisRG-L/Orange-Cat-Lens-Extension"
+    "url": "git+https://github.com/luisRG-L/Orange-Cat-Lens-Extension.git"
   },
   "bugs": {
     "url": "https://github.com/luisRG-L/Orange-Cat-Lens-Extension/issues"
@@ -17,6 +17,9 @@
     "vscode": "^1.90.0"
   },
   "main": "./out/extension.js",
+  "activationEvents": [
+    "onCommand:extension.sayHello"
+  ],
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
@@ -25,14 +28,12 @@
   "categories": [
     "Programming Languages"
   ],
-  "author": {
-    "name": "LuisRG-L"
-  },
+  "author": "LuisRG-L",
   "devDependencies": {
     "typescript": "^4.4.3",
     "@types/node": "^16.11.0",
     "@types/vscode": "^1.60.0",
-    "vscode": "^1.4.0"
+    "vscode": ""
   },
   "license": "MIT",
   "contributes": {
@@ -61,6 +62,29 @@
           ".oxml"
         ],
         "configuration": "./grammars/oml-configuration.json"
+      },
+      {
+        "id": "odoc",
+        "aliases": [
+          "Orange Documentation",
+          "odoc"
+        ],
+        "extensions": [
+          ".odoc",
+          ".od"
+        ],
+        "configuration": "./grammars/odoc-configuration.json"
+      },
+      {
+        "id": "ocatignore",
+        "aliases": [
+          "Orange Cat Ignore",
+          "ocatignore"
+        ],
+        "extensions": [
+          ".ocatignore",
+          ".oci"
+        ]
       }
     ],
     "grammars": [
@@ -73,6 +97,16 @@
         "language": "oml",
         "scopeName": "source.oml",
         "path": "./syntaxes/oml.tmLanguage.json"
+      },
+      {
+        "language": "odoc",
+        "scopeName": "source.odoc",
+        "path": "./syntaxex/odoc.tmLanguage.json"
+      },
+      {
+        "language": "ocat ignore",
+        "scopeName": "source.ocatignore",
+        "path": "./syntaxes/ocatignore.tmLanguage.json"
       }
     ],
     "themes": [
@@ -91,6 +125,10 @@
       {
         "language": "oml",
         "path": "./snippets/oml.json"
+      },
+      {
+        "language": "ocatignore",
+        "path": "./snippets/oci.json"
       }
     ],
     "iconThemes": [
@@ -132,5 +170,8 @@
     "color",
     "custom",
     "orangecat"
-  ]
+  ],
+  "directories": {
+    "example": "examples"
+  }
 }

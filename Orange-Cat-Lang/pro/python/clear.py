@@ -1,5 +1,5 @@
-from config import *
-from utilities import *
+from .config import *
+from .utilities import *
 
 deleteAll(PROJECTS)
 print("Deleted all projects") 

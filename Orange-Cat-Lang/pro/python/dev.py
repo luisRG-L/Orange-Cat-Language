@@ -1,6 +1,6 @@
-from config import *
-from basicCodes import *
-from utilities import *
+from .config import *
+from .basicCodes import *
+from . utilities import *
 
 directory = input("Project name: ")
 project_path = PROJECTS + directory

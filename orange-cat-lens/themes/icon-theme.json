@@ -1,28 +1,34 @@
 {
   "iconDefinitions": {
     "orangeCatFile": {
-      "iconPath": "./images/ocat-icon.png"
+      "iconPath": "../images/ocat-icon.png"
     },
     "orangeCatStrict": {
-      "iconPath": "./images/oc-icon.png"
+      "iconPath": "../images/oc-icon.png"
     },
     "orangeCatTest": {
-      "iconPath": "./images/ocat-test.png"
+      "iconPath": "../images/ocat-test.png"
     },
     "orangeCatLibFile": {
-      "iconPath": "./images/olib-icon.png"
+      "iconPath": "../images/olib-icon.png"
     },
     "normal-folder": {
-      "iconPath": "./images/folder-normal.png"
+      "iconPath": "../images/folder-normal.png"
     },
     "normal-folder-e": {
-      "iconPath": "./images/folder-normal-open.png"
+      "iconPath": "../images/folder-normal-open.png"
     },
     "ocat-folder": {
-      "iconPath": "./images/folder-ocat.png"
+      "iconPath": "../images/folder-ocat.png"
     },
     "ocat-folder-e": {
-      "iconPath": "./images/folder-ocat-open.png"
+      "iconPath": "../images/folder-ocat-open.png"
+    },
+    "ignore": {
+      "iconPath": "../images/ignore.png"
+    },
+    "odoc": {
+      "iconPath": "../images/odoc.png"
     }
   },
   "fileExtensions": {
@@ -32,7 +38,9 @@
     "olib": "orangeCatLibFile"
   },
   "languageIds": {
-    "orangecat": "orangeCatFile"
+    "orangecat": "orangeCatFile",
+    "ocatignore": "ignore",
+    "odoc": "odoc"
   },
   "folder": "normal-folder",
   "folderExpanded": "normal-folder-e",

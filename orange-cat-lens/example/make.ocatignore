@@ -1,0 +1,13 @@
+; Specific IDE configurations
+.vscode/
+.ocatide/
+
+; Tick events
+- .ocat/
+- .vcat/
+
+; Files
+*.vscodeignore
+*.txt
+*.bat
+*.exe

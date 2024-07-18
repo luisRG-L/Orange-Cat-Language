@@ -1,6 +1,6 @@
-from lexer import *
-from errors import *
-from config import *
+from .lexer import *
+from .errors import *
+from .config import *
 
 def parse_code(code):
     tokens = iterateTokens(code)

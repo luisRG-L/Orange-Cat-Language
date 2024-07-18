@@ -1,6 +1,6 @@
-from utilities import *
-from basicCodes import *
-from config import *
+from. utilities import *
+from. basicCodes import *
+from. config import *
 import os
 
 project_name = input("Project name: ")

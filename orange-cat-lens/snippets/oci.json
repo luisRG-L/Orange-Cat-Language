@@ -1,0 +1,45 @@
+{
+    "project": {
+        "prefix": "Basic project",
+        "body": [
+            "; Specific IDE configurations",
+            ".vscode/",
+            ".ocatide/",
+            "",
+            "; Tick events",
+            "- .ocat/",
+            "- .vcat/",
+            "",
+            "; Files",
+            "*.vscodeignore",
+            "*.txt",
+            "*.bat",
+            "*.exe"
+        ]
+    },
+    "git": {
+        "prefix": "Git project",
+        "body": [
+            "; Specific IDE configurations",
+            ".vscode/",
+            ".ocatide/",
+            "",
+            "; Tick events",
+            "- .ocat/",
+            "- .vcat/",
+            "- gitrep/",
+            "- git/",
+            "",
+            "; Files",
+            "*.txt",
+            "*.bat",
+            "*.exe",
+            "*.gitignore",
+            "*.vscodeignore",
+            "",
+            "; Git configurations",
+            ".git/",
+            ".github/"
+        ]
+    }
+}

@@ -1,5 +1,5 @@
-from utilities import *
-from config import *
+from .utilities import *
+from .config import *
 
 project_name = input("Project name: ")
 project_path = PROJECTS + project_name

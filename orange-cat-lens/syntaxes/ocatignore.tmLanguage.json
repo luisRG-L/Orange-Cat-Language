@@ -1,0 +1,45 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "Orange Cat Ignore",
+    "patterns": [
+        {
+            "include": "#comment"
+        },
+        {
+            "include": "#commit"
+        },
+        {
+            "include": "#tick"
+        }
+    ],
+    "repository": {
+        "comment": {
+            "patterns": [
+                {
+                    "name": "comment.line",
+                    "begin": ";",
+                    "end": "$"
+                }
+            ]
+        },
+        "commit": {
+            "patterns": [
+                {
+                    "name": "string.quoted.double",
+                    "begin": "#",
+                    "end": "%"
+                }
+            ]
+        },
+        "tick": {
+            "patterns": [
+                {
+                    "name": "constant.language",
+                    "begin": "- ",
+                    "end": "/"
+                }
+            ]
+        }
+    },
+    "scopeName": "source.ocatignore"
+}

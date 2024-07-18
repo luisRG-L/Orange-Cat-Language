@@ -1,6 +1,6 @@
-from utilities import *
-from config import *
-from basicCodes import *
+from .utilities import *
+from .config import *
+from .basicCodes import *
 import subprocess
 
 filename = input("file name: ") + ".ocat"
