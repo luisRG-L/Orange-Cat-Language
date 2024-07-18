@@ -14,3 +14,6 @@ __pycache__/
 # Ignore project dependecies
 node_modules/
 venv/
+
+# Ignore ps and ps1 files
+upload.ps1
